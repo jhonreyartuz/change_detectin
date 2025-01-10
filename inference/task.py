@@ -1,6 +1,6 @@
 from celery import shared_task
 from .modelbuilder import ModelBuilder
-from .models import InferenceResult
+from .Models import InferenceResult
 
 @shared_task
 def perform_inference_task(model_path, weights_path, before_image_path, after_image_path):
